@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 mongodb+srv://mongodbuser:ankur0304@cluster0.64syl.mongodb.net/?retryWrites=true&w=majority
 mongoose.connect(process.env.MONGODB_URL ||'mongodb://localhost/issue-traker');
 
-// aquire the connection
+// require the connection
 const db = mongoose.connection;
 
 // if error occurs
