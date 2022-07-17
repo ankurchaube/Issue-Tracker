@@ -2,8 +2,8 @@
 const mongoose = require('mongoose');
 
 //connecting to database
-// mongodb+srv://samirsayyed:786Samir!@cluster1.7ryvl.mongodb.net/Cluster0?retryWrites=true&w=majority
-mongoose.connect('mongodb://localhost/issue-traker');
+mongodb+srv://mongodbuser:ankur0304@cluster0.64syl.mongodb.net/?retryWrites=true&w=majority
+mongoose.connect(process.env.MONGODB_URL ||'mongodb://localhost/issue-traker');
 
 // aquire the connection
 const db = mongoose.connection;
